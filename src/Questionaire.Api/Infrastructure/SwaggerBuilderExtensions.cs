@@ -9,7 +9,7 @@ namespace Questionaire.Api.Infrastructure
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("swagger/v1/swagger.json", "Effectory API");
+                c.SwaggerEndpoint("swagger/v1/swagger.json", "API");
                 c.RoutePrefix = string.Empty;
             });
             return app;
@@ -20,8 +20,8 @@ namespace Questionaire.Api.Infrastructure
             {
                 options.SwaggerDoc("v1", new OpenApiInfo()
                 {
-                    Description = "Effectory API",
-                    Title = "Effectory API",
+                    Description = "API",
+                    Title = "API",
                     Version = "v1",
                     Contact = new OpenApiContact()
                     {
